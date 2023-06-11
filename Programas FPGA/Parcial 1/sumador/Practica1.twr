@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml Practica1.twx Practica1.ncd -o Practica1.twr Practica1.pcf
+-ucf Sumadorj.ucf
+
+Design file:              Practica1.ncd
+Physical constraint file: Practica1.pcf
+Device,package,speed:     xc6slx9,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a1             |carry          |   10.967|
+a1             |s1             |   10.569|
+a1             |s10            |    9.341|
+a1             |s11            |    9.919|
+a1             |sc             |    9.478|
+a2             |carry          |   10.668|
+a2             |s1             |   10.369|
+a2             |s10            |    9.322|
+a2             |s11            |    9.620|
+a2             |sc             |    9.278|
+b1             |carry          |   10.453|
+b1             |s11            |    9.405|
+b1             |sc             |    9.340|
+b2             |carry          |   10.211|
+b2             |s11            |    9.163|
+b2             |sc             |    9.288|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Jun 10 18:31:40 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 381 MB
+
+
+

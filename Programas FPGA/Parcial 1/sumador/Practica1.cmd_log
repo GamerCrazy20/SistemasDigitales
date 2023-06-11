@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/Sumador/Practica1.xst" -ofn "/home/ise/Programas_FPGA/Sumador/Practica1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-3 Practica1.ngc Practica1.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Practica1_map.ncd Practica1.ngd Practica1.pcf 
+par -w -intstyle ise -ol high -mt off Practica1_map.ncd Practica1.ncd Practica1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Practica1.twx Practica1.ncd -o Practica1.twr Practica1.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sumadorj.ucf -p xc6slx9-csg324-3 Practica1.ngc Practica1.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Practica1_map.ncd Practica1.ngd Practica1.pcf 
+par -w -intstyle ise -ol high -mt off Practica1_map.ncd Practica1.ncd Practica1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Practica1.twx Practica1.ncd -o Practica1.twr Practica1.pcf -ucf Sumadorj.ucf 
+bitgen -intstyle ise -f Practica1.ut Practica1.ncd 

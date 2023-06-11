@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Programas_FPGA/Sumador/Sumador.ncd
+OUTFILE=/home/ise/Programas_FPGA/Sumador/Sumador.bit
+FAMILY=Spartan6
+PART=xc6slx9-3csg324
+WORKINGDIR=/home/ise/Programas_FPGA/Sumador
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

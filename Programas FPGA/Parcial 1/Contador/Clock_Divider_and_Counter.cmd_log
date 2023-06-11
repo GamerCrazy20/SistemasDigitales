@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/Contador/Clock_Divider_and_Counter.xst" -ofn "/home/ise/Programas_FPGA/Contador/Clock_Divider_and_Counter.syr" 

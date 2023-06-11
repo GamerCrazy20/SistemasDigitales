@@ -1,0 +1,78 @@
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-3 FlipJK.ngc FlipJK.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg324-3 FlipJK.ngc FlipJK.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FlipJK.twx FlipJK.ncd -o FlipJK.twr FlipJK.pcf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 FlipJK.ngc FlipJK.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FlipJK.twx FlipJK.ncd -o FlipJK.twr FlipJK.pcf -ucf Flipjkj.ucf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 FlipJK.ngc FlipJK.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FlipJK.twx FlipJK.ncd -o FlipJK.twr FlipJK.pcf -ucf Flipjkj.ucf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 Flipjk.ngc Flipjk.ngd  
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 Flipjk.ngc Flipjk.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Flipjk_map.ncd Flipjk.ngd Flipjk.pcf 
+par -w -intstyle ise -ol high -mt off Flipjk_map.ncd Flipjk.ncd Flipjk.pcf 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 Flipjk.ngc Flipjk.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Flipjk_map.ncd Flipjk.ngd Flipjk.pcf 
+par -w -intstyle ise -ol high -mt off Flipjk_map.ncd Flipjk.ncd Flipjk.pcf 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 Flipjk.ngc Flipjk.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Flipjk_map.ncd Flipjk.ngd Flipjk.pcf 
+par -w -intstyle ise -ol high -mt off Flipjk_map.ncd Flipjk.ncd Flipjk.pcf 
+bitgen -intstyle ise -f Flipjk.ut Flipjk.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/Flipjk.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/Flipjk.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 Flipjk.ngc Flipjk.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Flipjk_map.ncd Flipjk.ngd Flipjk.pcf 
+par -w -intstyle ise -ol high -mt off Flipjk_map.ncd Flipjk.ncd Flipjk.pcf 
+bitgen -intstyle ise -f Flipjk.ut Flipjk.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 Flipjk.ngc Flipjk.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Flipjk_map.ncd Flipjk.ngd Flipjk.pcf 
+par -w -intstyle ise -ol high -mt off Flipjk_map.ncd Flipjk.ncd Flipjk.pcf 
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Flipjk_map.ncd Flipjk.ngd Flipjk.pcf 
+par -w -intstyle ise -ol high -mt off Flipjk_map.ncd Flipjk.ncd Flipjk.pcf 
+bitgen -intstyle ise -f Flipjk.ut Flipjk.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 FlipJK.ngc FlipJK.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/FLipjk/FlipJK.xst" -ofn "/home/ise/Programas_FPGA/FLipjk/FlipJK.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 FlipJK.ngc FlipJK.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Flipjkj.ucf -p xc6slx9-csg324-3 FlipJK.ngc FlipJK.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FlipJK_map.ncd FlipJK.ngd FlipJK.pcf 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 
+par -w -intstyle ise -ol high -mt off FlipJK_map.ncd FlipJK.ncd FlipJK.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FlipJK.twx FlipJK.ncd -o FlipJK.twr FlipJK.pcf -ucf Flipjkj.ucf 
+bitgen -intstyle ise -f FlipJK.ut FlipJK.ncd 

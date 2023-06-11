@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/Contador/Contador_LEDs.xst" -ofn "/home/ise/Programas_FPGA/Contador/Contador_LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Contadorj.ucf -p xc6slx9-csg324-3 Contador_LEDs.ngc Contador_LEDs.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Contador_LEDs_map.ncd Contador_LEDs.ngd Contador_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Contador_LEDs_map.ncd Contador_LEDs.ncd Contador_LEDs.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Contador_LEDs.twx Contador_LEDs.ncd -o Contador_LEDs.twr Contador_LEDs.pcf -ucf Contadorj.ucf 
+bitgen -intstyle ise -f Contador_LEDs.ut Contador_LEDs.ncd 
+xst -intstyle ise -ifn "/home/ise/Programas_FPGA/Contador/Contador_LEDs.xst" -ofn "/home/ise/Programas_FPGA/Contador/Contador_LEDs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Contadorj.ucf -p xc6slx9-csg324-3 Contador_LEDs.ngc Contador_LEDs.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Contador_LEDs_map.ncd Contador_LEDs.ngd Contador_LEDs.pcf 
+par -w -intstyle ise -ol high -mt off Contador_LEDs_map.ncd Contador_LEDs.ncd Contador_LEDs.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Contador_LEDs.twx Contador_LEDs.ncd -o Contador_LEDs.twr Contador_LEDs.pcf -ucf Contadorj.ucf 
+bitgen -intstyle ise -f Contador_LEDs.ut Contador_LEDs.ncd 
